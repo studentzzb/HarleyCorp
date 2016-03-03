@@ -63,12 +63,26 @@ public class EventChangeReceiveServlet extends HttpServlet {
 		JSONObject plainTextJson = JSONObject.parseObject(plainText);		
 		String eventType = plainTextJson.getString("EventType");
 		switch (eventType){
-		case "org_user_add"://do something
+		case "user_add_org"://通讯录用户增加 do something
 			break;
-		case "org_user_modify"://do something
+		case "user_modify_org"://通讯录用户更改 do something
 			break;
-		case "org_user_leave":// do something
+		case "user_leave_org"://通讯录用户离职  do something
 			break;
+		case "org_admin_add"://通讯录用户被设为管理员 do something
+			break;
+		case "org_admin_remove"://通讯录用户被取消设置管理员 do something
+			break;
+		case "org_dept_create"://通讯录企业部门创建 do something
+			break;
+		case "org_dept_modify"://通讯录企业部门修改 do something
+			break;
+		case "org_dept_remove"://通讯录企业部门删除 do something
+			break;
+		case "org_remove"://企业被解散 do something
+			break;
+
+
 		case "check_url"://do something
 		default : //do something
 			break;
