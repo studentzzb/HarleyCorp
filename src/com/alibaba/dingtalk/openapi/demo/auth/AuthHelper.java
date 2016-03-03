@@ -20,6 +20,11 @@ import com.alibaba.dingtalk.openapi.demo.utils.HttpHelper;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.dingtalk.open.client.ServiceFactory;
+import com.dingtalk.open.client.api.service.corp.CorpConnectionService;
+import com.dingtalk.open.client.common.SdkInitException;
+import com.dingtalk.open.client.common.ServiceException;
+import com.dingtalk.open.client.common.ServiceNotExistException;
 
 public class AuthHelper {
 
@@ -171,7 +176,11 @@ public class AuthHelper {
 		String agentid = null;
 
 		try {
+//			ServiceFactory serviceFactory = ServiceFactory.getInstance();
+//	        CorpConnectionService corpConnectionService = serviceFactory.getOpenService(CorpConnectionService.class);
+//	        accessToken = corpConnectionService.getCorpToken(Env.CORP_ID, Env.CORP_SECRET);
 			accessToken = AuthHelper.getAccessToken();
+	       
 			ticket = AuthHelper.getJsapiTicket(accessToken);
 			// ticket = FileUtils.getValue("jsticket", corpId);
 //			JSONObject jsTicketValue = (JSONObject) FileUtils.getValue("jsticket", corpId);
@@ -179,7 +188,7 @@ public class AuthHelper {
 			signature = AuthHelper.sign(ticket, nonceStr, timeStamp, signedUrl);
 			agentid = "";
 			
-		} catch (OApiException e) {
+		} catch (OApiException  e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -37,6 +37,14 @@ java version "1.7.0_75"
 
 
 3.部门的操作
+请查看[文档](http://ddtalk.github.io/dingTalkDoc/#管理通讯录)
+- 后端文件：[链接](https://github.com/injekt/openapi-demo-java/blob/master/src/com/alibaba/dingtalk/openapi/demo/department)
 
+4.员工的操作
+请查看[文档](http://ddtalk.github.io/dingTalkDoc/#管理通讯录)
+- 后端文件：[链接](https://github.com/injekt/openapi-demo-java/blob/master/src/com/alibaba/dingtalk/openapi/demo/user)
 
-2，关于员工的操作
+5.通讯录事件（比如用户的离职，部门的删除）回调
+请查看[文档](http://ddtalk.github.io/dingTalkDoc/#通讯录及群会话变更事件回调接口录)
+- 后端文件：[链接](https://github.com/injekt/openapi-demo-java/blob/master/src/com/alibaba/dingtalk/openapi/servlet/EventChangeReceiveServlet.java)
+
