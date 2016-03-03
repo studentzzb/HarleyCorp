@@ -7,9 +7,9 @@ java version "1.7.0_75"
 
 2.打开工程的Env.java文件，填入企业的CORP_ID和SECRET（CORP_ID和SECRET可以在企业OA后台找到）
 ```
-    public static final String CORP_ID = "";
+    public static final String CORP_ID = "your CORP_ID";
     
-    public static final String SECRET = "";
+    public static final String SECRET = "your CORP_SECRET";
 ```
 
 <img src="https://img.alicdn.com/tps/TB1oZwOKFXXXXc1XVXXXXXXXXXX-1084-621.jpg" width="542" height="310">
