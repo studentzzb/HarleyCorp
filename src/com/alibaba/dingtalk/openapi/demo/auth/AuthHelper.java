@@ -50,7 +50,7 @@ public class AuthHelper {
 		JSONObject jsontemp = new JSONObject();
 		if (accessTokenValue == null || curTime - accessTokenValue.getLong("begin_time") >= cacheTime) {
 			System.out.println(df.format(new Date())+" authhelper: get new access_token and ticket");
-			String url = Env.OAPI_HOST + "/gettoken?" + "corpid=" + Env.CORP_ID + "&corpsecret=" + Env.SECRET;
+			String url = Env.OAPI_HOST + "/gettoken?" + "corpid=" + Env.CORP_ID + "&corpsecret=" + Env.CORP_SECRET;
 			JSONObject response = HttpHelper.httpGet(url);
 			
 			if (response.containsKey("access_token")) {

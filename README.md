@@ -9,7 +9,7 @@ java version "1.7.0_75"
 ```
     public static final String CORP_ID = "your CORP_ID";
     
-    public static final String SECRET = "your CORP_SECRET";
+    public static final String CORP_SECRET = "your CORP_SECRET";
 ```
 
 <img src="https://img.alicdn.com/tps/TB1oZwOKFXXXXc1XVXXXXXXXXXX-1084-621.jpg" width="542" height="310">
