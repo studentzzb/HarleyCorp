@@ -5,13 +5,13 @@ java version "1.7.0_75"
 
 1..将工程clone到本地：```git clone https://github.com/ddtalk/HarleyCorp.git```，导入到IDE中，比如eclipse点击```File->import```导入到eclipse中
 
-2.打开工程的Env.java文件，填入企业的CORP_ID和SECRET（CORP_ID和SECRET可以再企业OA后台找到）
+2.打开工程的Env.java文件，填入企业的CORP_ID和SECRET（CORP_ID和SECRET可以在企业OA后台找到）
 ```
     public static final String CORP_ID = "";
     
     public static final String SECRET = "";
 ```
-![corp](https://img.alicdn.com/tps/TB1y_xcKVXXXXa6XXXXXXXXXXXX-1084-621.jpg)
+![corp](https://img.alicdn.com/tps/TB1oZwOKFXXXXc1XVXXXXXXXXXX-1084-621.jpg)
 
 3.部署工程
 
