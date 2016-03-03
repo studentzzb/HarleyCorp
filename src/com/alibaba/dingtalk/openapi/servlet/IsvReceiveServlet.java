@@ -197,7 +197,7 @@ public class IsvReceiveServlet extends HttpServlet {
 			 * access_token的过期时间为两个小时
 			 */
 			try {
-				AuthHelper.getAccessToken(corpId);
+				AuthHelper.getAccessToken();
 //				String accToken = null;
 //				String url = Env.OAPI_HOST + "/service/get_corp_token?" + "suite_access_token="
 //						+ FileUtils.getValue("ticket", "suiteToken");

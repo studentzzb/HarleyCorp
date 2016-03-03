@@ -76,11 +76,11 @@ public class Demo {
 			System.out.println("11:" + FileUtils.read2JSON("test12"));
 
 			// 获取access token
-			String accessToken = AuthHelper.getAccessToken("ding0a4b72b432ac3b96");
+			String accessToken = AuthHelper.getAccessToken();
 			log("成功获取access token: ", accessToken);
 
 			// 获取jsapi ticket
-			String ticket = AuthHelper.getJsapiTicket(accessToken,"");
+			String ticket = AuthHelper.getJsapiTicket(accessToken);
 			log("成功获取jsapi ticket: ", ticket);
 
 			// 获取签名

@@ -43,7 +43,7 @@ public class ContactsServlet extends HttpServlet {
 		try {
 			response.setContentType("text/html; charset=utf-8"); 
 
-			String accessToken = AuthHelper.getAccessToken(corpId);
+			String accessToken = AuthHelper.getAccessToken();
 			
 			List<Department> departments = new ArrayList<Department>();
 			departments = DepartmentHelper.listDepartments(accessToken);
