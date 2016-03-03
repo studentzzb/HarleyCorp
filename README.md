@@ -13,14 +13,13 @@ java version "1.7.0_75"
 ```
 
 <img src="https://img.alicdn.com/tps/TB1oZwOKFXXXXc1XVXXXXXXXXXX-1084-621.jpg" width="542" height="310">
-<!-- ![corp](https://img.alicdn.com/tps/TB1oZwOKFXXXXc1XVXXXXXXXXXX-1084-621.jpg) -->
 
 3.部署工程
 
 4.OA后台创建微应用，并把工程的首页地址填到微应用首页中。
 [如何创建微应用？](http://ddtalk.github.io/dingTalkDoc/#step-2-创建微应用)
+<img src="https://img.alicdn.com/tps/TB1N490JFXXXXceXFXXXXXXXXXX-602-524.png" width="542" height="472">
 
-![mico](https://img.alicdn.com/tps/TB1N490JFXXXXceXFXXXXXXXXXX-602-524.png)
 
 ###本DEMO具体实现
 
