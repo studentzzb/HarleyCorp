@@ -4,3 +4,6 @@ build/
 out/
 .idea/
 .settings/
+*.log
+*.log.*
+
