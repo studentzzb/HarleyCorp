@@ -1,6 +1,6 @@
-/bin/
+bin/
 *.DS_Store
-build/**
-out/**
-.idea/**
-.settings/**
+build/
+out/
+.idea/
+.settings/
