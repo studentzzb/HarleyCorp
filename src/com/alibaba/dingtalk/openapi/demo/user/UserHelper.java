@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.dingtalk.open.client.ServiceFactory;
+import com.dingtalk.open.client.api.model.corp.CorpUserBaseInfo;
 import com.dingtalk.open.client.api.model.corp.CorpUserDetail;
 import com.dingtalk.open.client.api.model.corp.CorpUserDetailList;
 import com.dingtalk.open.client.api.model.corp.CorpUserList;
@@ -113,7 +114,7 @@ public class UserHelper {
 				offset, size, order);
 	}
 
-	public static CorpUserDetail getUserInfo(String accessToken, String code) throws Exception{
+	public static CorpUserBaseInfo getUserInfo(String accessToken, String code) throws Exception{
 		
 		CorpUserService corpUserService = ServiceFactory.getInstance().getOpenService(CorpUserService.class);
 		return corpUserService.getUserinfo(accessToken, code);
