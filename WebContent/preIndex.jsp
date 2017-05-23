@@ -244,10 +244,6 @@ function openCompLink(){
 	/* alert('config:'+_config.corpId+' appid:'+_config.appid); */
 	window.location='index.jsp?appid='+_config.appid+'&dd_nav_bgcolor=FF5E97F6&corpid='+_config.corpId;
 }
-function openISVLink(){
-	/* alert('config'+_config.corpId); */
-	window.location='isvIndex.jsp?appid='+_config.appid+'&dd_nav_bgcolor=FF5E97F6&corpid='+_config.corpId;
-}
 </script>
 </head>
 <body >
@@ -259,14 +255,9 @@ function openISVLink(){
 
 <div id="main">
   <div id="contentBox">
-    <div id="boxTitle">选择身份体验钉钉ISV</div>
     <div class="role" id="compPanel" onclick="openCompLink()">
       <img src='./pic/comp.png' style="text-align:left"> 
       <div id="roleTitle" >&nbsp;我是企业开发者</div>
-    </div>
-    <div class="role" id="isvPanel" onclick="openISVLink()">
-      <img src='./pic/isv.png' style="text-align:left">
-      <div id="roleTitle" >&nbsp;我是ISV开发者</div>
     </div>
   </div>
   

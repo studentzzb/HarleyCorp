@@ -82,7 +82,7 @@ function openLink(url){
 </head>
 
 <body >
-	<!-- <div align="center">
+	<div align="center">
 		<img id ="userImg" alt="头像" src="./nav/default.png">
 	</div>
 	<div align="center">
@@ -92,10 +92,10 @@ function openLink(url){
 	<div align="center">
 		<span>UserId:</span>
 		<div id="userId" style="display:inline-block"></div>
-	</div> -->
+	</div>
 	<br>
-	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;欢迎您：<div id="userName" style="display:inline-block;font-weight:bold"></div>&nbsp;成为钉钉开发者，您当前在钉钉的<code>userId</code>为：
-		<div id="userId" style="display:inline-block;font-weight:bold"></div> 。</div>
+	<!-- <div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;欢迎您：<div id="userName" style="display:inline-block;font-weight:bold"></div>&nbsp;成为钉钉开发者，您当前在钉钉的<code>userId</code>为：
+		<div id="userId" style="display:inline-block;font-weight:bold"></div> 。</div> -->
 	<div style="padding-left:10px;">&nbsp;&nbsp;&nbsp;&nbsp;我们为您提供了文档＋<code>api</code>帮助您快速的开发微应用并接入钉钉。</div>
 	<br>
  <ul>
@@ -116,23 +116,19 @@ function openLink(url){
 	<div class="text">使用JSAPI</div>
 </li>
 <li>
-	<div class="icon"><img src="list/num33.png" style="width: 25px; height: 25px"></div>
-	<div class="text">导航框架</div>
-</li>
-<li>
-	<div class="icon"><img src="list/num4.png" style="width: 25px; height: 25px"></div>
+	<div class="icon"><img src="list/num3.png" style="width: 25px; height: 25px"></div>
     <div class="text">List展示（当前仅支持Android）</div>
 </li>
 <li>
-	<div class="icon"><img src="list/num5.png" style="width: 25px; height: 25px"></div>
+	<div class="icon"><img src="list/num4.png" style="width: 25px; height: 25px"></div>
     <div class="text">侧拉展现（当前仅支持Android）</div>
 </li>
 <li>
-  <div class="icon"><img src="list/num6.png" style="width: 25px; height: 25px"></div>
+  <div class="icon"><img src="list/num5.png" style="width: 25px; height: 25px"></div>
   <div class="text">Tab页面（当前仅支持Android）</div>
 </li>
 <li>
-  <div class="icon"><img src="list/num7.png" style="width: 25px; height: 25px"></div>
+  <div class="icon"><img src="list/num6.png" style="width: 25px; height: 25px"></div>
   <div class="text">企业通讯录</div>
 </li>
 </ul>
@@ -149,24 +145,21 @@ window.addEventListener('load', function() {
  		openLink('http://ddtalk.github.io/dingTalkDoc/#企业接入指南');
 	});
 	items[1].addEventListener('click',function(){
-		openLink('http://h5.m.laiwang.com/home/ding.html');
-	});
-	items[2].addEventListener('click',function(){
 		 window.location='./nav/1.html';
 	});
 	
 	
-	items[3].addEventListener('click', function(){
+	items[2].addEventListener('click', function(){
  		window.location = './list/list.html'; 
 	});
 	
-	items[4].addEventListener('click',function(){
+	items[3].addEventListener('click',function(){
  	 	window.location='./drawer/index.html'; 
 	});
-	items[5].addEventListener('click',function(){
+	items[4].addEventListener('click',function(){
  		 window.location='./tab/index.html'; 
 	});
-	items[6].addEventListener('click',function(){
+	items[5].addEventListener('click',function(){
  		 window.location='./contacts.jsp?corpid='+_config.corpId; 
 	});	
 	

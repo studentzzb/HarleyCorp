@@ -20,11 +20,6 @@
     <url-pattern>/OAoauth</url-pattern>
   </servlet-mapping>
   <servlet>
-    <display-name>IsvReceiveServlet</display-name>
-    <servlet-name>IsvReceiveServlet</servlet-name>
-    <servlet-class>com.alibaba.dingtalk.openapi.servlet.IsvReceiveServlet</servlet-class>
-  </servlet>
-  <servlet>
     <display-name>EventChangeReceiveServlet</display-name>
     <servlet-name>EventChangeReceiveServlet</servlet-name>
     <servlet-class>com.alibaba.dingtalk.openapi.servlet.EventChangeReceiveServlet</servlet-class>
@@ -36,10 +31,6 @@
   <servlet-mapping>
     <servlet-name>ContactsServlet</servlet-name>
     <url-pattern>/contactsinfo</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>IsvReceiveServlet</servlet-name>
-    <url-pattern>/isvreceive</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>EventChangeReceiveServlet</servlet-name>
