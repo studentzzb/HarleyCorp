@@ -6,4 +6,7 @@ out/
 .settings/
 *.log
 *.log.*
+.settings/
+
+
 

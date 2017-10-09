@@ -131,6 +131,10 @@ function openLink(url){
   <div class="icon"><img src="list/num6.png" style="width: 25px; height: 25px"></div>
   <div class="text">企业通讯录</div>
 </li>
+<li>
+  <div class="icon"><img src="list/num7.png" style="width: 25px; height: 25px"></div>
+  <div class="text">扫一扫</div>
+</li>
 </ul>
  <script type="text/javascript">
 window.addEventListener('load', function() {
@@ -162,6 +166,21 @@ window.addEventListener('load', function() {
 	items[5].addEventListener('click',function(){
  		 window.location='./contacts.jsp?corpid='+_config.corpId; 
 	});	
+	items[6].addEventListener('click',function(){
+		alert('aaa');
+		biz.util.scan({
+		    type: all , // type 为 all、qrCode、barCode，默认是all。
+		    onSuccess: function(data) {
+		    	alert(data);
+		    //onSuccess将在扫码成功之后回调
+		      /* data结构
+		        { 'text': String}
+		      */
+		    },
+		   onFail : function(err) {
+		   }
+		});
+	});
 	
 </script>
  

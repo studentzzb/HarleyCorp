@@ -6,9 +6,9 @@ public class Env {
 	
 	public static final String OAPI_HOST = "https://oapi.dingtalk.com";
 	public static final String OA_BACKGROUND_URL = ""; 
-	public static final String CORP_ID = "";
+	public static final String CORP_ID = "ding2c5ffc0a15733f5335c2f4657eb6378f";
 	
-	public static final String CORP_SECRET = "";
+	public static final String CORP_SECRET = "whgzojXm8XxGkn8JIT8ExKkMh-Gk6Uw6d-qRYOlmwmwpeV3blvjM3g-oQT2SpunQ";
 	public static final String SSO_Secret = "";
 
 	
